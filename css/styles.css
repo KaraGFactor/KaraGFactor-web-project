@@ -31,34 +31,59 @@ th { background-color: #2D2D2D; color: white; padding: 15px; border: 1px solid #
 td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 .alt-row { background-color: #fcfaf8; }
 
-/* Layout Elements */
+/* Layout Elements  */
 .container { 
     max-width: 1000px; 
-    margin: 0 auto; /* Centers the entire content block */
+    margin: 0 auto; 
     padding: 20px; 
-    text-align: center; /* Ensures images and headers stay centered */
+    text-align: center; 
 }
 
 .hero-subtext { font-family: Georgia, serif; font-size: 24px; text-align: center; }
 
-/* Tighten the Kid-Friendly section */
-.full-width-section {
-    background-color: transparent; /* Changed from white to match the page cream */
-    padding: 20px 0; /* Reduced top/bottom padding */
+/* 1. Center the Insight box  */
+.insight-container { 
+    max-width: 600px; 
+    margin: 20px auto; 
+    text-align: left; 
 }
 
-/* Redefine the footer to be sleek and purposeful */
+/* 2. FIX FOR BULLETS: This pulls them into the center with the text  */
+.list-wrapper {
+    text-align: center; 
+    margin: 20px auto;
+}
+
+.list-wrapper ul {
+    display: inline-block; /* Forces the box to wrap tight around text  */
+    text-align: left;      /* Aligns bullets and text together  */
+    padding-left: 20px;    /* Gives room for the dots  */
+}
+
+.list-wrapper li {
+    margin-bottom: 10px;
+}
+
+blockquote { border-left: 5px solid #A68D78; padding: 20px; background-color: #ffffff; font-style: italic; margin: 0; }
+.insight-label { color: #A68D78; font-weight: bold; font-style: normal; }
+
+/* Tighten the Kid-Friendly section  */
+.full-width-section {
+    background-color: transparent; 
+    padding: 20px 0; 
+}
+
+/* Redefine the footer to be sleek  */
 footer {
     max-width: 800px;
-    margin: 40px auto 0 auto; /* Added space above, centered the block */
+    margin: 40px auto 0 auto;
     padding: 30px;
     background-color: #ffffff;
-    border: 1px solid #2D2D2D; /* Added a subtle border to define the box */
+    border: 1px solid #2D2D2D; 
     text-align: center;
 }
 
-/* Adjust the footer text size */
 footer .hero-subtext {
-    font-size: 20px; /* Slightly smaller for better balance */
+    font-size: 20px; 
     margin: 0;
 }
