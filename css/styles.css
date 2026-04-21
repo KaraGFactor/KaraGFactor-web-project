@@ -14,7 +14,7 @@ h3 { text-transform: uppercase; letter-spacing: 2px; text-align: center; color: 
 
 /* Navigation */
 nav { background-color: #ffffff; padding: 20px; text-align: center; border-bottom: 1px solid #2D2D2D; }
-nav a { color: #A68D78; text-decoration: none; margin: 0 10px; font-weight: bold; }
+nav a { color: #A68D78; text-decoration: none; margin: 0 10px; font-weight: bold; transition: 0.3s; }
 nav a:hover { color: #2D2D2D; text-decoration: underline; }
 
 /* Image Styling */
@@ -32,8 +32,29 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 .alt-row { background-color: #fcfaf8; }
 
 /* Layout Elements */
-.container { padding: 20px; }
+.container { 
+    max-width: 1000px; 
+    margin: 0 auto; /* Centers the entire content block */
+    padding: 20px; 
+    text-align: center; /* Ensures images and headers stay centered */
+}
+
 .hero-subtext { font-family: Georgia, serif; font-size: 24px; text-align: center; }
-.insight-container { max-width: 600px; margin: 20px auto; }
-blockquote { border-left: 5px solid #A68D78; padding: 20px; background-color: #ffffff; font-style: italic; }
+
+/* Centers the Insight box and Kid-Friendly list box while keeping text readable */
+.insight-container, .list-wrapper { 
+    max-width: 600px; 
+    margin: 20px auto; 
+    text-align: left; /* Keeps list bullets and blockquote text aligned left inside the centered box */
+}
+
+blockquote { border-left: 5px solid #A68D78; padding: 20px; background-color: #ffffff; font-style: italic; margin: 0; }
 .insight-label { color: #A68D78; font-weight: bold; font-style: normal; }
+
+/* Footer Styling */
+footer {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-top: 1px solid #2D2D2D;
+}
