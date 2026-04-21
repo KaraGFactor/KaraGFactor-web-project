@@ -1,4 +1,4 @@
-/* Body & Global Styles */
+/* 1. Background color for the entire webpage */
 body {
     background-color: #F9F4F0;
     color: #2D2D2D;
@@ -8,55 +8,52 @@ body {
     line-height: 1.6;
 }
 
-/* Typography */
+/* 2. Headers with different font sizes and colors */
 h1 {
-    font-weight: normal;
+    font-size: 3rem;
+    text-transform: uppercase;
     letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-bottom: 0;
     text-align: center;
+    margin-top: 40px;
+    color: #2D2D2D;
 }
 
-h2 {
-    font-weight: normal;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-top: 0;
-    text-align: center;
-}
-
-h3 {
-    letter-spacing: 2px;
+h2, h3 {
+    font-size: 1.5rem;
+    color: #A68D78;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 30px;
 }
 
+/* 3. Paragraphs with font family, size, and color */
 p {
-    font-size: 1.1rem;
-}
-
-.hero-subtext {
     font-family: Georgia, serif;
-    font-size: 24px;
+    font-size: 1.1rem;
+    color: #2D2D2D;
+    max-width: 800px;
+    margin: 20px auto;
     text-align: center;
 }
 
-/* Navigation */
-nav {
-    text-align: center;
-    padding: 20px;
+/* 4. Lists and Links with hover effects */
+ul {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border: 1px solid #2D2D2D;
 }
 
-nav span {
-    font-size: 14px;
-    letter-spacing: 2px;
+li {
+    margin-bottom: 10px;
+    color: #2D2D2D;
 }
 
-/* Links & Hover Effects (Requirement!) */
 a {
     color: #A68D78;
     text-decoration: underline;
-    transition: color 0.3s ease;
+    transition: 0.3s ease; /* Smooth color change */
 }
 
 a:hover {
@@ -64,58 +61,18 @@ a:hover {
     text-decoration: none;
 }
 
-/* Images */
+/* 5. Layout: Padding and margins */
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
 .circular-mask {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     width: 300px;
     height: 300px;
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #2D2D2D;
-}
-
-.cocktail-img {
-    border-radius: 15px;
-    border: 1px solid #2D2D2D;
-    display: block;
-    margin: 20px auto;
-}
-
-/* Tables */
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    border: 1px solid #2D2D2D;
-}
-
-th {
-    background-color: #2D2D2D;
-    color: white;
-    padding: 15px;
-}
-
-td {
-    padding: 15px;
-    border: 1px solid #2D2D2D;
-}
-
-.alt-row {
-    background-color: #fcfaf8;
-}
-
-/* Containers */
-.card-container {
-    max-width: 600px;
-    margin: 0 auto;
-    border: 1px solid #2D2D2D;
-    padding: 40px;
-    background-color: #ffffff;
-}
-
-.full-width-white {
-    background-color: #ffffff;
-    padding: 40px;
-    border-top: 1px solid #2D2D2D;
-    text-align: center;
 }
