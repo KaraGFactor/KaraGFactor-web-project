@@ -1,78 +1,39 @@
-/* 1. Background color for the entire webpage */
+/* Body and Background */
 body {
     background-color: #F9F4F0;
     color: #2D2D2D;
     margin: 0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* 2. Headers with different font sizes and colors */
-h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-align: center;
-    margin-top: 40px;
-    color: #2D2D2D;
-}
+/* Headers */
+h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 5px; text-align: center; margin-bottom: 0; }
+h2 { font-size: 2rem; text-transform: uppercase; letter-spacing: 3px; text-align: center; margin-top: 0; }
+h3 { text-transform: uppercase; letter-spacing: 2px; text-align: center; color: #A68D78; margin: 30px 0; }
 
-h2, h3 {
-    font-size: 1.5rem;
-    color: #A68D78;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 30px;
-}
+/* Navigation */
+nav { background-color: #ffffff; padding: 20px; text-align: center; border-bottom: 1px solid #2D2D2D; }
+nav a { color: #A68D78; text-decoration: none; margin: 0 10px; font-weight: bold; }
+nav a:hover { color: #2D2D2D; text-decoration: underline; }
 
-/* 3. Paragraphs with font family, size, and color */
-p {
-    font-family: Georgia, serif;
-    font-size: 1.1rem;
-    color: #2D2D2D;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-}
-
-/* 4. Lists and Links with hover effects */
-ul {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px 40px;
-    background-color: #ffffff;
-    border: 1px solid #2D2D2D;
-}
-
-li {
-    margin-bottom: 10px;
-    color: #2D2D2D;
-}
-
-a {
-    color: #A68D78;
-    text-decoration: underline;
-    transition: 0.3s ease; /* Smooth color change */
-}
-
-a:hover {
-    color: #2D2D2D;
-    text-decoration: none;
-}
-
-/* 5. Layout: Padding and margins */
-.container {
-    padding: 40px;
-    margin: 0 auto;
-}
-
+/* Image Styling */
 .circular-mask {
-    display: block;
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 1px solid #2D2D2D;
+    width: 300px; height: 300px; overflow: hidden; border-radius: 50%;
+    border: 1px solid #2D2D2D; margin: 20px auto; display: flex; justify-content: center;
 }
+.circular-mask img { margin-left: -75px; }
+.cocktail-img { display: block; margin: 20px auto; border-radius: 15px; border: 1px solid #2D2D2D; }
+
+/* Tables */
+table { width: 100%; max-width: 800px; margin: 20px auto; border-collapse: collapse; background-color: #ffffff; }
+th { background-color: #2D2D2D; color: white; padding: 15px; border: 1px solid #2D2D2D; }
+td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
+.alt-row { background-color: #fcfaf8; }
+
+/* Layout Elements */
+.container { padding: 20px; }
+.hero-subtext { font-family: Georgia, serif; font-size: 24px; text-align: center; }
+.insight-container { max-width: 600px; margin: 20px auto; }
+blockquote { border-left: 5px solid #A68D78; padding: 20px; background-color: #ffffff; font-style: italic; }
+.insight-label { color: #A68D78; font-weight: bold; font-style: normal; }

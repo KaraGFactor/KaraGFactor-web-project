@@ -3,36 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Beyond The Riverwalk: San Antonio Hidden Gems Guide</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
     <nav>
         <a href="../index.html">HOME</a> | 
-        <a href="project2.html">PROJECT 2</a> | 
+        <a href="project2.html">HIDDEN GEMS</a> |
         <a href="project3.html">PROJECT 3</a>
     </nav>
 
-    <h1>Beyond The Riverwalk</h1>
-    
-    <div class="circular-mask">
-        <img src="../images/hidden-gem.png" alt="San Antonio Hidden Gem" width="450" style="margin-left: -75px;">
-    </div>
+    <div class="container">
+        <header>
+            <h1>Beyond</h1>
+            <h2>The Riverwalk</h2>
+            <p class="hero-subtext"><i>A Hidden Gems Guide</i></p>
+            
+            <div class="nav-secondary">
+                <a href="#list">THE LIST</a> • <a href="#map">DETAILS</a> • <a href="#tips">LOCAL TIPS</a>
+            </div>
 
-    <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
-        <h2>Destination Quick-Info</h2>
-        <table>
-            <tr>
-                <th>LOCATION</th>
-                <th>VIBE</th>
-                <th>MUST-DO</th>
-            </tr>
-            <tr>
-                <td>Japanese Tea Garden</td>
-                <td>Zen / Nature</td>
-                <td>Jingu House Tea</td>
-            </tr>
-        </table>
-    </div>
+            <div class="circular-mask">
+                <img src="../images/hidden-gem.png" alt="San Antonio Hidden Gem crystal" width="450">
+            </div>
+        </header>
 
+        <div id="list" class="card-container">
+            <h3>The Hidden Gem List</h3>
+            <table class="list-table">
+                <tr>
+                    <td class="number">01</td>
+                    <td>
+                        <a href="https://maps.app.goo.gl/TKTkn39uCJMBcnt58" target="_blank">HOT WELLS RUINS</a>
+                        <br><span>Explore the skeletal remains of a 1920s luxury spa.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">02</td>
+                    <td>
+                        <a href="https://maps.app.goo.gl/WLHSupySrgL22XiUA" target="_blank">THE MUSEUM REACH</a>
+                        <br><span>Find the "Grotto" art installation along the river bank.</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="map" class="section">
+            <h3>Destination Quick-Info</h3>
+            <img src="../images/craft-cocktail.jpg" alt="Craft cocktail at Bar 1919" width="350" class="cocktail-img">
+            <p class="attribution">Photo by Taylor Friehl on Unsplash</p>
+            
+            <table class="info-table">
+                <tr>
+                    <th>LOCATION</th>
+                    <th>VIBE</th>
+                    <th>MUST-DO</th>
+                </tr>
+                <tr>
+                    <td>Japanese Tea Garden</td>
+                    <td>Zen / Nature</td>
+                    <td>Jingu House Tea</td>
+                </tr>
+                <tr class="alt-row">
+                    <td>Bar 1919</td>
+                    <td>Speakeasy</td>
+                    <td>Custom Cocktails</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="tips" class="insight-container">
+            <blockquote>
+                <span class="insight-label">LOCAL INSIGHT:</span> 
+                San Antonio winds can be unpredictable. Golden Hour is the best time for photos!
+            </blockquote>
+        </div>
+
+        <div class="full-width-section">
+            <h3>Top Kid-Friendly Hidden Gems</h3>
+            <div class="list-wrapper">
+                <p>Traveling with little ones? These spots offer plenty of space to explore:</p>
+                <ul>
+                    <li><strong>Yanaguana Garden:</strong> Incredible climbing structure and splash pad at Hemisfair.</li>
+                    <li><strong>The DoSeum:</strong> A premier shaded haven for active kids.</li>
+                    <li><strong>Pearsall Park:</strong> Home to the city's largest splash pad.</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p class="hero-subtext"><i>Thank you for exploring with us.</i></p>
+        </footer>
+    </div>
 </body>
+</html>
