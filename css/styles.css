@@ -41,20 +41,24 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 
 .hero-subtext { font-family: Georgia, serif; font-size: 24px; text-align: center; }
 
-/* Centers the Insight box and Kid-Friendly list box while keeping text readable */
-.insight-container, .list-wrapper { 
-    max-width: 600px; 
-    margin: 20px auto; 
-    text-align: left; /* Keeps list bullets and blockquote text aligned left inside the centered box */
+/* Tighten the Kid-Friendly section */
+.full-width-section {
+    background-color: transparent; /* Changed from white to match the page cream */
+    padding: 20px 0; /* Reduced top/bottom padding */
 }
 
-blockquote { border-left: 5px solid #A68D78; padding: 20px; background-color: #ffffff; font-style: italic; margin: 0; }
-.insight-label { color: #A68D78; font-weight: bold; font-style: normal; }
-
-/* Footer Styling */
+/* Redefine the footer to be sleek and purposeful */
 footer {
-    margin-top: 50px;
-    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto 0 auto; /* Added space above, centered the block */
+    padding: 30px;
     background-color: #ffffff;
-    border-top: 1px solid #2D2D2D;
+    border: 1px solid #2D2D2D; /* Added a subtle border to define the box */
+    text-align: center;
+}
+
+/* Adjust the footer text size */
+footer .hero-subtext {
+    font-size: 20px; /* Slightly smaller for better balance */
+    margin: 0;
 }
