@@ -129,8 +129,58 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
     margin-bottom: 10px;
 }
 
-blockquote { border-left: 5px solid #A68D78; padding: 20px; background-color: #ffffff; font-style: italic; margin: 0; }
-.insight-label { color: #A68D78; font-weight: bold; font-style: normal; }
+
+/* --- LOCAL INSIGHT TICKER SECTION --- */
+
+/* 1. The Main Box */
+.insight-container { 
+    max-width: 600px; 
+    margin: 20px auto; 
+    text-align: left; 
+}
+
+.ticker-box {
+    height: 60px; /* Limits the view to one tip at a time */
+    overflow: hidden; /* Hides the tips that aren't active */
+    position: relative;
+    border-left: 5px solid #A68D78;
+    background-color: #ffffff;
+    padding: 0 20px; /* Reduced vertical padding since height is fixed */
+    display: flex;
+    align-items: center;
+}
+
+.insight-label {
+    margin-right: 10px;
+    white-space: nowrap; /* Prevents "LOCAL INSIGHT" from breaking into two lines */
+    color: #A68D78;
+    font-weight: bold;
+}
+
+/* 2. The Moving Wrapper */
+.ticker-wrapper {
+    display: flex;
+    flex-direction: column;
+    animation: tickerLoop 16s infinite; /* 4 seconds per tip for 4 tips */
+}
+
+.ticker-item {
+    height: 60px; /* MUST match the .ticker-box height exactly */
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #2D2D2D;
+}
+
+/* 3. The Animation Keyframes */
+@keyframes tickerLoop {
+    0%, 20% { transform: translateY(0); }        /* Tip 1 */
+    25%, 45% { transform: translateY(-60px); }   /* Tip 2 */
+    50%, 70% { transform: translateY(-120px); }  /* Tip 3 */
+    75%, 95% { transform: translateY(-180px); }  /* Tip 4 */
+    100% { transform: translateY(0); }           /* Smooth jump back to start */
+}
 
 /* Tighten the Kid-Friendly section  */
 .full-width-section {
