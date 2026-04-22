@@ -8,18 +8,17 @@
 </head>
 
 <body>
-    <nav>
+    <nav aria-label="Main Site Navigation">
         <a href="../index.html">HOME</a> | 
         <a href="project2.html">PROJECT 2</a> |
         <a href="project3.html">PROJECT 3</a>
     </nav>
 
-    <div class="container">
-        <header>
+ <header class="container">
             <h1 class="sr-only">Beyond The Riverwalk: A San Antonio Hidden Gems Guide</h1> 
             <h2>Beyond</h2>
             <h3>The Riverwalk</h3>
-            <p class="hero-subtext"><i>A Hidden Gems Guide</i></p>
+            <p class="hero-subtext"><em>A Hidden Gems Guide</em></p>
             
             <div class="nav-secondary">
                 <a href="#list">THE LIST</a>
@@ -33,39 +32,40 @@
             </div>
         </header>
 
+    <main class="container">
         <div id="list" class="card-container">
             <h3>The Hidden Gem List</h3>
             <table class="list-table">
                 <tr>
-                    <td class="number">01</td>
+                    <th scope="row" class="number">01</th>
                     <td>
                         <a href="https://maps.app.goo.gl/QsgJxhgY3smz32Ko6" target="_blank" aria-label="Open Bar 1919 in Google Maps (opens in a new tab)">BAR 1919</a>
                         <br><span>Hipster Speakeasy with charcuterie.</span>
                     </td>
                 </tr>
                 <tr>
-                    <td class="number">02</td>
+                    <th scope="row" class="number">02</th>
                     <td>
                         <a href="https://maps.app.goo.gl/DXUzzqCAjPeJFZNq9" target="_blank" aria-label="Open Japanese Tea Garden in Google Maps (opens in a new tab)">JAPANESE TEA GARDEN</a>
                         <br><span>Beautiful Japanese-style garden with tea offered.</span>
                     </td>
                 </tr>
                 <tr>
-                    <td class="number">03</td>
+                    <th scope="row" class="number">03</th>
                     <td>
                         <a href="https://maps.app.goo.gl/TKTkn39uCJMBcnt58" target="_blank" aria-label="Open Hot Wells Ruins in Google Maps (opens in a new tab)">HOT WELLS RUINS</a>
                         <br><span>Explore the skeletal remains of a 1920s luxury spa.</span>
                     </td>
                 </tr>
                 <tr>
-                    <td class="number">04</td>
+                    <th scope="row" class="number">04</th>
                     <td>
                         <a href="https://maps.app.goo.gl/WLHSupySrgL22XiUA" target="_blank" aria-label="Open The Museum Reach in Google Maps (opens in a new tab)">THE MUSEUM REACH</a>
                         <br><span>Find the "Grotto" art installation along the river bank.</span>
                     </td>
                 </tr>
                 <tr>
-                    <td class="number">05</td>
+                    <th scope="row" class="number">05</th>
                     <td>
                         <a href="https://maps.app.goo.gl/8WedVYUN98ZXnGhi7" target="_blank" aria-label="Open Saga Light Show in Google Maps (opens in a new tab)">SAGA LIGHT SHOW</a>
                         <br><span>Light show projected on the historical San Fernando Cathedral.</span>
@@ -80,23 +80,28 @@
     <div class="destination-gallery">
         <div class="gallery-item">
             <img src="../images/craft-cocktail.jpg" alt="Bar 1919 Cocktail">
-            <a href="https://unsplash.com" class="img-cite" aria-label="Photo by T. Friehl on Unsplash (opens in a new tab)" target="_blank">Photo: T. Friehl</a>
+            <a href="https://unsplash.com" class="img-cite" target="_blank">Photo: T. Friehl
+            <span class="sr-only">(opens image in a new tab)</span> </a>
         </div>
         <div class="gallery-item">
             <img src="../images/japanese-tea-garden.JPG" alt="Japanese Tea Garden">
-            <a href="../index.html" class="img-cite" aria-label="Photo by K. Factor (opens in a new tab)" target="_blank">Photo: K. Factor</a>
+            <a href="../index.html" class="img-cite" target="_blank">Photo: K. Factor
+            <span class="sr-only">(opens image in a new tab)</span> </a>
         </div>
         <div class="gallery-item">
             <img src="../images/hot-wells-ruins.jpg" alt="Hot Wells Ruins">
-            <a href="https://commons.wikimedia.org/" class="img-cite" aria-label="Photo by Wikimedia (opens in a new tab)" target="_blank">Photo: Wikimedia</a>
+            <a href="https://commons.wikimedia.org/" class="img-cite" target="_blank">Photo: Wikimedia
+            <span class="sr-only">(opens image in a new tab)</span> </a>
         </div>
         <div class="gallery-item">
             <img src="../images/grotto-thumb.jpg" alt="The Grotto Art">
-            <a href="https://www.flickr.com/photos/cleopold73/51461048988/in/photostream/" class="img-cite" aria-label="Photo by C. Leopold (opens in a new tab)" target="_blank">Photo: C. Leopold</a>
+            <a href="https://www.flickr.com/photos/cleopold73/51461048988/in/photostream/" class="img-cite"target="_blank">Photo: C. Leopold
+            <span class="sr-only">(opens image in a new tab)</span> </a>
         </div>
         <div class="gallery-item">
             <img src="../images/saga-thumb.jpg" alt="San Fernando Cathedral Saga">
-            <a href="https://commons.wikimedia.org/wiki/File:San_Antonio-_The_Saga_light_show.jpg" class="img-cite" aria-label="Photo by Wikimedia (opens in a new tab)" target="_blank">Photo: Wikimedia</a>
+            <a href="https://commons.wikimedia.org/wiki/File:San_Antonio-_The_Saga_light_show.jpg" class="img-cite" target="_blank">Photo: Wikimedia
+            <span class="sr-only">(opens image in a new tab)</span> </a>
         </div>
     </div>
 
@@ -140,12 +145,12 @@
 
 <div id="tips" class="insight-container">
     <span class="insight-label">LOCAL INSIGHT:</span>
-    <blockquote class="ticker-box">
+    <blockquote class="ticker-box" aria-live="polite">
         <div class="ticker-wrapper">
             <div class="ticker-item">San Antonio winds can be unpredictable. Golden Hour is best for photos!</div>
-            <div class="ticker-item">Wear comfortable shoes—the cobblestones around the Grotto are uneven.</div>
-            <div class="ticker-item">The Japanese Tea Garden is most peaceful before 10:00 AM on weekdays.</div>
-            <div class="ticker-item">Bar 1919 has a strict code of conduct for a sophisticated vibe.</div>
+            <div class="ticker-item" aria-hidden="true">Wear comfortable shoes—the cobblestones around the Grotto are uneven.</div>
+            <div class="ticker-item" aria-hidden="true">The Japanese Tea Garden is most peaceful before 10:00 AM on weekdays.</div>
+            <div class="ticker-item" aria-hidden="true">Bar 1919 has a strict code of conduct for a sophisticated vibe.</div>
             </div>
     </blockquote>
 </div>
@@ -153,11 +158,10 @@
     <div id="family" class="full-width-section">
         <h3>Top Kid-Friendly Hidden Gems</h3>
 
-<div class="adventure-track" role="img" aria-label="Animation of a family walking across a path">
-<div class="family-walker" aria-hidden="true">👨‍👩‍👧‍👦
-
+<div class="adventure-track" role="region" aria-label="Animation of a family walking across a path">
+<div class="family-walker" aria-hidden="true">👨‍👩‍👧‍👦</div>
 </div>
-        </div>
+        
 
         <div class="list-wrapper">
             <p>Traveling with little ones? These spots offer plenty of space to explore:</p>
@@ -166,13 +170,12 @@
                 <li><strong>The DoSeum:</strong> Shaded haven for active kids.</li>
                 <li><strong>Pearsall Park:</strong> City's largest splash pad.</li>
             </ul>
-        </div>
-    </div>
 </div>
 </div>
-
+</main>
 <footer>
-    <p class="hero-subtext"><i>Thank you for exploring with us.</i></p>
+    <p class="hero-subtext"><em>Thank you for exploring with us.</em></p>
 </footer>
+
 </body>
 </html>

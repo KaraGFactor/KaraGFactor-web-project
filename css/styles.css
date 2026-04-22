@@ -85,9 +85,10 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 }
 
 
-.number {
+th.number {
     width: 40px;
     font-weight: bold;
+    text-align: left;
 }
 
 
