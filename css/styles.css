@@ -135,54 +135,55 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 /* 1. The Main Box */
 .insight-container { 
     max-width: 600px; 
-    margin: 20px auto; 
+    margin: 30px auto; 
     text-align: left; 
 }
 
 .insight-label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: #A68D78;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.85rem;
 }
 
+/* The Fixed Window */
 .ticker-box {
-    height: 50px; 
-    overflow: hidden;
+    height: 40px; /* Slimmer for a cleaner look */
+    overflow: hidden; 
     position: relative;
     border-left: 5px solid #A68D78;
     background-color: #ffffff;
     padding: 0 15px;
-    display: flex;
-    align-items: center;
+    margin: 0;
 }
 
+/* The Vertical Slide Wrapper */
 .ticker-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    animation: tickerLoop 16s infinite; 
+    animation: tickerLoop 16s infinite; /* 4 seconds per tip */
 }
 
+/* The Individual Tip */
 .ticker-item {
-    height: 50px; /* MUST MATCH ticker-box height */
+    height: 40px; /* MUST MATCH .ticker-box exactly */
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically centers text inside the 40px */
     font-style: italic;
     font-size: 0.95rem;
     color: #2D2D2D;
-    white-space: nowrap; /* Prevents text from wrapping to multiple lines */
+    white-space: nowrap; 
 }
 
-
+/* Precise Animation Steps */
 @keyframes tickerLoop {
-    0%, 20% { transform: translateY(0); }        
-    25%, 45% { transform: translateY(-50px); }   
-    50%, 70% { transform: translateY(-100px); }  
-    75%, 95% { transform: translateY(-150px); }  
-    100% { transform: translateY(0); }           
+    0%, 20% { transform: translateY(0); }        /* Tip 1 (Start) */
+    25%, 45% { transform: translateY(-40px); }   /* Tip 2 */
+    50%, 70% { transform: translateY(-80px); }   /* Tip 3 */
+    75%, 95% { transform: translateY(-120px); }  /* Tip 4 */
+    100% { transform: translateY(0); }           /* Loop back to Tip 1 */
 }
 
 /* Tighten the Kid-Friendly section  */
