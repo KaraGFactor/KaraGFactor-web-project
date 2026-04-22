@@ -29,7 +29,7 @@ nav a:hover { color: #2D2D2D; text-decoration: underline; }
 }
 .circular-mask img { margin-left: -75px; }
 
-/* The new Gallery replaces the old single cocktail image */
+/* Gallery */
 .destination-gallery {
     display: flex;
     justify-content: center;
@@ -135,53 +135,54 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 /* 1. The Main Box */
 .insight-container { 
     max-width: 600px; 
-    margin: 20px auto; 
+    margin: 30px auto; 
     text-align: left; 
 }
 
+.insight-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #A68D78;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
 .ticker-box {
-    height: 70px; /* Limits the view to one tip at a time */
-    overflow: hidden; /* Hides the tips that aren't active */
+    height: 80px; /* Taller height to fit wrapped text */
+    overflow: hidden;
     position: relative;
     border-left: 5px solid #A68D78;
     background-color: #ffffff;
-    padding: 0 20px; /* Reduced vertical padding since height is fixed */
+    padding: 0 20px;
     display: flex;
     align-items: center;
 }
 
-.insight-label {
-    margin-right: 10px;
-    white-space: nowrap; /* Prevents "LOCAL INSIGHT" from breaking into two lines */
-    color: #A68D78;
-    font-weight: bold;
-}
-
-/* 2. The Moving Wrapper */
 .ticker-wrapper {
     display: flex;
     flex-direction: column;
-    animation: tickerLoop 16s infinite; /* 4 seconds per tip for 4 tips */
+    width: 100%;
+    animation: tickerLoop 16s infinite; 
 }
 
 .ticker-item {
-    height: 70px; /* MUST match the .ticker-box height exactly */
+    height: 80px; /* MUST MATCH ticker-box height */
     display: flex;
     align-items: center;
     font-style: italic;
-    font-size: 0.9rem;
-    line-height: 1.2;
+    font-size: 1rem;
+    line-height: 1.4;
     color: #2D2D2D;
-    white-space: nowrap;
 }
 
-/* 3. The Animation Keyframes */
+/* Updated Animation to match the new 80px height */
 @keyframes tickerLoop {
-    0%, 20% { transform: translateY(0); }        /* Tip 1 */
-    25%, 45% { transform: translateY(-70px); }   /* Tip 2 */
-    50%, 70% { transform: translateY(-120px); }  /* Tip 3 */
-    75%, 95% { transform: translateY(-180px); }  /* Tip 4 */
-    100% { transform: translateY(0); }           /* Smooth jump back to start */
+    0%, 20% { transform: translateY(0); }        
+    25%, 45% { transform: translateY(-80px); }   
+    50%, 70% { transform: translateY(-160px); }  
+    75%, 95% { transform: translateY(-240px); }  
+    100% { transform: translateY(0); }           
 }
 
 /* Tighten the Kid-Friendly section  */
