@@ -14,7 +14,7 @@ h3 {
     text-transform: uppercase; 
     letter-spacing: 2px; 
     text-align: center; 
-    color: #A68D78; 
+    color: #76604D; 
     margin: 30px 0 10px 0; }
 
 /* Navigation */
@@ -39,7 +39,7 @@ nav li {
 }
 
 nav a { 
-    color: #8C735B; /* Darker gold for better 3:1 contrast ratio  */
+    color: #76604D; /* Darker gold for better 3:1 contrast ratio  */
     text-decoration: none; 
     font-weight: bold; 
     transition: 0.3s; 
@@ -159,8 +159,7 @@ th.number {
 }
 
 
-/* --- LOCAL INSIGHT TICKER SECTION --- */
-
+/* LOCAL INSIGHT TICKER SECTION */
 .insight-container { 
     max-width: 600px; 
     margin: 30px auto; 
@@ -170,7 +169,7 @@ th.number {
 .insight-label {
     display: block;
     margin-bottom: 8px;
-    color: #A68D78;
+    color: #76604D;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -260,7 +259,7 @@ footer .hero-subtext {
 .list-wrapper p {
     font-family: Georgia, serif;
     font-style: italic;
-    color: #A68D78;
+    color: #76604D;
     margin-bottom: 15px;
 }
 
