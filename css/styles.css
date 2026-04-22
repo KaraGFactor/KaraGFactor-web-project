@@ -19,7 +19,7 @@ h3 {
 
 /* Navigation */
 nav { background-color: #ffffff; padding: 20px; text-align: center; border-bottom: 1px solid #2D2D2D; }
-nav a { color: #A68D78; text-decoration: none; margin: 0 10px; font-weight: bold; transition: 0.3s; }
+nav a { color: #8C735B; text-decoration: none; margin: 0 10px; font-weight: bold; transition: 0.3s; }
 nav a:hover { color: #2D2D2D; text-decoration: underline; }
 
 /* Image Styling */
@@ -54,7 +54,7 @@ nav a:hover { color: #2D2D2D; text-decoration: underline; }
 .img-cite {
     display: block;
     font-size: 10px;
-    color: #636e72;
+    color: #4D4D4D;
     margin-top: 5px;
     text-decoration: none;
     text-align: center;
@@ -262,4 +262,16 @@ footer .hero-subtext {
         left: 110%; 
         transform: translateY(0) rotate(0deg); 
     }
+}
+
+/* Accessibility: Hide elements visually but keep them accessible to screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
