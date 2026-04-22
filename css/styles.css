@@ -186,10 +186,14 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
     100% { transform: translateY(0); }           /* Loop back to Tip 1 */
 }
 
-/* Tighten the Kid-Friendly section  */
+/* Kid-Friendly section */
 .full-width-section {
-    background-color: transparent; 
-    padding: 0; 
+    background-color: #ffffff; 
+    border: 1px solid #2D2D2D;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 650px;
+    border-radius: 4px;
 }
 
 /* Redefine the footer to be sleek  */
@@ -210,24 +214,39 @@ footer .hero-subtext {
 /* 1. The Walking Track */
 .adventure-track {
     width: 100%;
-    height: 40px;
-    background: transparent;
+    height: 45px;
     position: relative;
-    border-bottom: 1px dashed #A68D78; /* Represents the "Path" */
-    margin: 0 auto 15px auto;
-    max-width: 600px;
+    border-bottom: 2px solid #A68D78;
+    margin: 10px 0 25px 0;
     overflow: hidden;
 }
 
 /* 2. The Family Icon */
 .family-walker {
     position: absolute;
-    bottom: 2px;
-    font-size: 30px;
+    bottom: -5px; /* Sits directly ON the line */
+    font-size: 28px;
     animation: familyJourney 12s linear infinite;
-    filter: sepia(100%) saturate(300%) hue-rotate(10deg); /* Gives it your gold brand color */
+    filter: sepia(100%) saturate(300%) hue-rotate(10deg);
+}
+.list-wrapper p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #A68D78;
+    margin-bottom: 15px;
 }
 
+.list-wrapper ul {
+    list-style-type: none; /* Removes messy bullets */
+    padding-left: 0;
+}
+
+.list-wrapper li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    border-left: 3px solid #F9F4F0;
+    padding-left: 10px;
+}
 /* 3. The "Bobbing" Animation (Simulates steps) */
 @keyframes familyJourney {
     0% { 
