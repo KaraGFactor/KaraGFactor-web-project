@@ -75,22 +75,22 @@ th { background-color: #2D2D2D; color: white; padding: 15px; border: 1px solid #
 td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 .alt-row { background-color: #fcfaf8; }
 
-/* 3. FIX FOR TIGHTER GEM LIST: Add these specific rules */
+
 .list-table {
-    max-width: 550px; /* This makes the box tighter on the page */
+    max-width: 550px;
 }
 
 .list-table td {
-    padding: 10px 15px; /* Less vertical space for a sleeker look */
+    padding: 10px 15px;
 }
 
-/* Keeps the numbers column small */
+
 .number {
     width: 40px;
     font-weight: bold;
 }
 
-/* Keeps the description text aligned left for better reading */
+
 .list-table td:last-child {
     text-align: left;
     padding-left: 20px;
@@ -106,23 +106,23 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 
 .hero-subtext { font-family: Georgia, serif; font-size: 24px; text-align: center; }
 
-/* 1. Center the Insight box  */
+
 .insight-container { 
     max-width: 600px; 
     margin: 20px auto; 
     text-align: left; 
 }
 
-/* 2. FIX FOR BULLETS: This pulls them into the center with the text  */
+
 .list-wrapper {
     text-align: center; 
     margin: 20px auto;
 }
 
 .list-wrapper ul {
-    display: inline-block; /* Forces the box to wrap tight around text  */
-    text-align: left;      /* Aligns bullets and text together  */
-    padding-left: 20px;    /* Gives room for the dots  */
+    display: inline-block; 
+    text-align: left;      
+    padding-left: 20px;    
 }
 
 .list-wrapper li {
@@ -132,7 +132,6 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 
 /* --- LOCAL INSIGHT TICKER SECTION --- */
 
-/* 1. The Main Box */
 .insight-container { 
     max-width: 600px; 
     margin: 30px auto; 
@@ -148,9 +147,9 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
     font-size: 0.85rem;
 }
 
-/* The Fixed Window */
+
 .ticker-box {
-    height: 40px; /* Slimmer for a cleaner look */
+    height: 40px; 
     overflow: hidden; 
     position: relative;
     border-left: 5px solid #A68D78;
@@ -159,18 +158,18 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
     margin: 0;
 }
 
-/* The Vertical Slide Wrapper */
+
 .ticker-wrapper {
     display: flex;
     flex-direction: column;
-    animation: tickerLoop 16s infinite; /* 4 seconds per tip */
+    animation: tickerLoop 16s infinite; 
 }
 
-/* The Individual Tip */
+
 .ticker-item {
-    height: 40px; /* MUST MATCH .ticker-box exactly */
+    height: 40px; 
     display: flex;
-    align-items: center; /* Vertically centers text inside the 40px */
+    align-items: center; 
     font-style: italic;
     font-size: 0.95rem;
     color: #2D2D2D;
@@ -196,7 +195,7 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
     border-radius: 4px;
 }
 
-/* Redefine the footer to be sleek  */
+/* Footer  */
 footer {
     max-width: 800px;
     margin: 40px auto 0 auto;
@@ -211,7 +210,7 @@ footer .hero-subtext {
     margin: 0;
 }
 
-/* 1. The Walking Track */
+/* The Walking Track */
 .adventure-track {
     width: 100%;
     height: 45px;
@@ -221,10 +220,10 @@ footer .hero-subtext {
     overflow: hidden;
 }
 
-/* 2. The Family Icon */
+/* The Family Icon */
 .family-walker {
     position: absolute;
-    bottom: -5px; /* Sits directly ON the line */
+    bottom: -5px; 
     font-size: 28px;
     animation: familyJourney 12s linear infinite;
     filter: sepia(100%) saturate(300%) hue-rotate(10deg);
@@ -237,7 +236,7 @@ footer .hero-subtext {
 }
 
 .list-wrapper ul {
-    list-style-type: none; /* Removes messy bullets */
+    list-style-type: none; 
     padding-left: 0;
 }
 
@@ -247,7 +246,7 @@ footer .hero-subtext {
     border-left: 3px solid #F9F4F0;
     padding-left: 10px;
 }
-/* 3. The "Bobbing" Animation (Simulates steps) */
+/* "Bobbing" Animation (Simulates steps) */
 @keyframes familyJourney {
     0% { 
         left: -10%; 
