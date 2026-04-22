@@ -140,7 +140,7 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 }
 
 .ticker-box {
-    height: 60px; /* Limits the view to one tip at a time */
+    height: 70px; /* Limits the view to one tip at a time */
     overflow: hidden; /* Hides the tips that aren't active */
     position: relative;
     border-left: 5px solid #A68D78;
@@ -165,18 +165,20 @@ td { padding: 15px; border: 1px solid #2D2D2D; text-align: center; }
 }
 
 .ticker-item {
-    height: 60px; /* MUST match the .ticker-box height exactly */
+    height: 70px; /* MUST match the .ticker-box height exactly */
     display: flex;
     align-items: center;
     font-style: italic;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
     color: #2D2D2D;
+    white-space: nowrap;
 }
 
 /* 3. The Animation Keyframes */
 @keyframes tickerLoop {
     0%, 20% { transform: translateY(0); }        /* Tip 1 */
-    25%, 45% { transform: translateY(-60px); }   /* Tip 2 */
+    25%, 45% { transform: translateY(-70px); }   /* Tip 2 */
     50%, 70% { transform: translateY(-120px); }  /* Tip 3 */
     75%, 95% { transform: translateY(-180px); }  /* Tip 4 */
     100% { transform: translateY(0); }           /* Smooth jump back to start */
