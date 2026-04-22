@@ -276,3 +276,22 @@ footer .hero-subtext {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+/* --- ACCESSIBILITY: SKIP LINK --- */
+.skip-link {
+    position: absolute;
+    top: -40px; /* Hidden off-screen [cite: 296] */
+    left: 0;
+    background: #A68D78;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 0; /* Slides down into view when tabbed [cite: 156, 293] */
+}
