@@ -322,3 +322,45 @@ footer .hero-subtext {
 .skip-link:focus {
     top: 0; /* Slides down into view when tabbed [cite: 156, 293] */
 }
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* For tablets and phones (smaller than 768px) */
+@media (max-width: 768px) {
+    .destination-gallery {
+        flex-direction: column; /* Stacks images vertically */
+        align-items: center;
+    }
+
+    .gallery-item {
+        max-width: 100%; /* Images take full width on mobile */
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Shrinks large headers for mobile screens */
+    }
+
+    .ticker-item {
+        font-size: 0.8rem; /* Keeps ticker text from overflowing */
+        white-space: normal; /* Allows text to wrap if needed */
+    }
+}
+
+/* Form Styling */
+.form-group { margin-bottom: 15px; text-align: left; }
+input, select { width: 100%; padding: 10px; margin-top: 5px; }
+#submitBtn { 
+    background-color: #76604D; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+}
+.response-box { 
+    display: none; 
+    margin-top: 20px; 
+    padding: 15px; 
+    border: 1px solid #76604D; 
+    background-color: #fcfaf8; 
+}
