@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link sr-only-focusable" href="#main">Skip to content</a>
 
     <header>
-        <h1>GreenTech Solutions</h1>
-        <nav>
-            <div class="logo">
-                <h1>Greentech Solutions</h1>
-            </div>
-            <ul>
+        <div class="logo">
+            <h1>Greentech Solutions</h1>
+        </div>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+        <nav aria-label="Primary navigation">
+            <ul id="primary-navigation" class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="products.html">What We Offer</a></li>
@@ -26,7 +27,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <section id="hero">
             <h2>Reducing Environmental Impact Through Innovation</h2>
             <p>Welcome to GreenTech Solutions, where we lead the way in innovative sustainability practices.</p>
@@ -144,6 +145,6 @@
         <p>&copy; 2026 GreenTech Solutions. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

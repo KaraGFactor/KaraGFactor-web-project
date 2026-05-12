@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link sr-only-focusable" href="#main">Skip to content</a>
 
     <header>
         <div class="logo">
             <h1>GreenTech Solutions</h1>
         </div>
-        <nav>
-            <ul>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+        <nav aria-label="Primary navigation">
+            <ul id="primary-navigation" class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="products.html">What We Offer</a></li>
@@ -24,17 +26,17 @@
         </nav>
     </header>
 
-<main>
+<main id="main">
     <section id="solutions-hero">
         <h2>Innovative Sustainability Solutions</h2>
         <p>From AI-driven software to high-efficiency hardware, we provide the tools your business needs to lead the green revolution.</p>
         
         <!-- Interactive Filter Buttons -->
         <div id="filter-container">
-            <button class="filter-btn active" onclick="filterSelection('all')">Show All</button>
-            <button class="filter-btn" onclick="filterSelection('hardware')">Hardware</button>
-            <button class="filter-btn" onclick="filterSelection('software')">Software</button>
-            <button class="filter-btn" onclick="filterSelection('consulting')">Consulting</button>
+            <button class="filter-btn active" data-category="all">Show All</button>
+            <button class="filter-btn" data-category="hardware">Hardware</button>
+            <button class="filter-btn" data-category="software">Software</button>
+            <button class="filter-btn" data-category="consulting">Consulting</button>
         </div>
     </section>
 
@@ -81,6 +83,6 @@
         <p>&copy; 2026 GreenTech Solutions | San Antonio, TX</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

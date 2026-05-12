@@ -14,3 +14,10 @@ During this project, I deepened my understanding of the following technical conc
 
 ## Challenges Faced
 The most significant challenge was achieving a specific, high-end "branded" look while restricted to pure HTML. Without the use of external CSS, I had to get creative with table properties like `cellpadding`, `cellspacing`, and `border-radius` to create a clean, modern interface. I also had to troubleshoot several pathing issues on GitHub Pages to ensure my image assets were mapping correctly to the live site.
+
+## Final Project Responsive Checklist
+- [x] Mobile navigation collapses cleanly under `768px`
+- [x] No horizontal scrolling on phones or small tablets
+- [x] CTA buttons and form fields are large enough for touch interaction
+- [x] Content hierarchy remains clear at `320px`, `480px`, `768px`, and `1024px`
+- [x] JavaScript filters and forms work without console errors
