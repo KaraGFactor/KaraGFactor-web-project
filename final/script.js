@@ -26,3 +26,33 @@ if (subscribeForm) {
         subscribeForm.reset();
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contact-form');
+    const feedback = document.getElementById('form-feedback');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic Validation Check
+            const email = document.getElementById('email').value;
+            if (email.includes('@')) {
+                // Success State
+                feedback.textContent = "Thank you! Our San Antonio team will reach out shortly.";
+                feedback.style.backgroundColor = "#e8f5e9";
+                feedback.style.color = "var(--deep-forest)";
+                feedback.classList.remove('hidden');
+                
+                // Reset form
+                contactForm.reset();
+            } else {
+                // Error State
+                feedback.textContent = "Please enter a valid email address.";
+                feedback.style.backgroundColor = "#ffebee";
+                feedback.style.color = "#c62828";
+                feedback.classList.remove('hidden');
+            }
+        });
+    }
+});

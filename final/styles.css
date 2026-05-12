@@ -255,3 +255,76 @@ timeline-item {
     transform: translateY(-3px); /* Snappy, mechanical lift */
     filter: brightness(1.1); /* Makes the tech-green glow slightly */
 }
+
+#contact {
+    background-color: var(--earth-background);
+    padding: 80px 10%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Mobile First */
+    gap: 50px;
+}
+
+.contact-info h2 {
+    color: var(--deep-forest);
+    margin-bottom: 20px;
+}
+
+address {
+    font-style: normal;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+address a {
+    color: var(--deep-forest);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid var(--tech-green);
+}
+
+.contact-form-wrapper {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--deep-forest);
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--soft-border);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.hidden {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contact-container {
+        flex-direction: row; /* Desktop Side-by-Side */
+        align-items: flex-start;
+    }
+    .contact-info, .contact-form-wrapper {
+        flex: 1;
+    }
+}
