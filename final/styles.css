@@ -60,7 +60,11 @@ html {
     font-weight: 700;
     margin-bottom: var(--spacing-s);
 }
-
+/* Hero Content spacing */
+.hero-content {
+    max-width: 90%;
+    margin-top: 50px; /* Gives room for the absolute header */
+}
 #hero p:last-child {
     color: var(--soft-border);
     max-width: 600px;
@@ -72,8 +76,13 @@ header {
     background-color: transparent; /* Makes it blend if placed over images */
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
 }
 
 /* Basic Reset */
@@ -137,8 +146,10 @@ header {
 }
 
 .logo h1 {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .nav-toggle {
@@ -194,17 +205,19 @@ nav a:focus-visible {
 
 @media (min-width: 768px) {
     .nav-toggle {
-        display: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
     }
-    .nav-menu {
+ .nav-menu {
         display: flex;
-        position: static;
         flex-direction: row;
-        align-items: center;
+        gap: 2rem;
         background: transparent;
-        width: auto;
-        padding: 0;
+        position: static;
         box-shadow: none;
+        padding: 0;
     }
 }
 
