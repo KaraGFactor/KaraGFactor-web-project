@@ -16,58 +16,66 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="products.html">Solutions</a></li>
-                <li><a href="blog.html">Resources</a></li>
+                <li><a href="products.html">What We Offer</a></li>
+                <li><a href="blog.html">Resource Library</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
                 <li><a href="index.html" class="final-link">The Final</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="solutions-header">
-            <h2>Our Eco-Friendly Technology</h2>
-            <p>Innovative tools designed to reduce your business's carbon footprint.</p>
-            
-            <!-- JavaScript Requirement: Filter Buttons -->
-            <div id="filter-container">
-                <button class="filter-btn active" onclick="filterSelection('all')">Show all</button>
-                <button class="filter-btn" onclick="filterSelection('hardware')">Hardware</button>
-                <button class="filter-btn" onclick="filterSelection('software')">Software</button>
-                <button class="filter-btn" onclick="filterSelection('consulting')">Consulting</button>
-            </div>
-        </section>
+<main>
+    <section id="solutions-hero">
+        <h2>Innovative Sustainability Solutions</h2>
+        <p>From AI-driven software to high-efficiency hardware, we provide the tools your business needs to lead the green revolution.</p>
+        
+        <!-- Interactive Filter Buttons -->
+        <div id="filter-container">
+            <button class="filter-btn active" onclick="filterSelection('all')">Show All</button>
+            <button class="filter-btn" onclick="filterSelection('hardware')">Hardware</button>
+            <button class="filter-btn" onclick="filterSelection('software')">Software</button>
+            <button class="filter-btn" onclick="filterSelection('consulting')">Consulting</button>
+        </div>
+    </section>
 
-        <section class="product-grid">
-            <!-- Energy-Efficient Devices -->
-            <div class="product-card hardware">
-                <img src="../images/technology-placeholder.jpg" alt="Energy-Efficient Device">
-                <h3>Energy-Efficient Devices</h3>
-                <p>Hardware designed to optimize power consumption across your office infrastructure.</p>
+    <section class="product-grid">
+        <!-- Hardware: Energy-Efficient Devices -->
+        <div class="product-card hardware">
+            <div class="card-image-container">
+                <img src="../images/energy-devices.jpg" alt="Energy Efficient Office Hardware">
             </div>
+            <h3>Energy-Efficient Devices</h3>
+            <p>Smart hardware designed to optimize power consumption across your infrastructure, reducing costs and waste.</p>
+        </div>
 
-            <!-- Smart Recycling Systems -->
-            <div class="product-card hardware">
-                <img src="../images/recycling-placeholder.jpg" alt="Smart Recycling System">
-                <h3>Smart Recycling Systems</h3>
-                <p>AI-powered sorting and waste management technology for sustainable offices.</p>
+        <!-- Hardware: Smart Recycling Systems -->
+        <div class="product-card hardware">
+            <div class="card-image-container">
+                <img src="../images/recycling-tech.jpg" alt="AI Smart Recycling Bin">
             </div>
+            <h3>Smart Recycling Systems</h3>
+            <p>Automated waste management technology that uses AI to sort and process office recyclables with precision.</p>
+        </div>
 
-            <!-- Carbon Tracking Software -->
-            <div class="product-card software">
-                <img src="../images/software-placeholder.jpg" alt="Carbon Tracking Dashboard">
-                <h3>Carbon Tracking Software</h3>
-                <p>Real-time analytics to monitor, report, and reduce your corporate emissions.</p>
+        <!-- Software: Carbon Tracking Software -->
+        <div class="product-card software">
+            <div class="card-image-container">
+                <img src="../images/carbon-dash.jpg" alt="Carbon Tracking Software Dashboard">
             </div>
+            <h3>Carbon Tracking Software</h3>
+            <p>A high-performance digital platform for monitoring, reporting, and reducing your corporate emissions in real-time.</p>
+        </div>
 
-            <!-- Consulting -->
-            <div class="product-card consulting">
-                <img src="../images/consulting-placeholder.jpg" alt="Sustainability Consulting">
-                <h3>Energy Efficiency Consulting</h3>
-                <p>Expert analysis and tailored strategies to save costs and energy.</p>
+        <!-- Consulting: Efficiency Consulting -->
+        <div class="product-card consulting">
+            <div class="card-image-container">
+                <img src="../images/consulting-session.jpg" alt="GreenTech Sustainability Consultant">
             </div>
-        </section>
-    </main>
+            <h3>Energy Efficiency Consulting</h3>
+            <p>Expert analysis tailored to your business, identifying high-impact strategies to save energy and improve ROI.</p>
+        </div>
+    </section>
+</main>
 
     <footer>
         <p>&copy; 2026 GreenTech Solutions | San Antonio, TX</p>

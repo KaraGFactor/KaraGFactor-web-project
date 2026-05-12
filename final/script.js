@@ -56,3 +56,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+function filterSelection(category) {
+    const cards = document.getElementsByClassName("product-card");
+    const buttons = document.getElementsByClassName("filter-btn");
+
+    // Update active button state
+    for (let btn of buttons) {
+        btn.classList.remove("active");
+        if (btn.textContent.toLowerCase().includes(category) || (category === 'all' && btn.textContent.includes('Show All'))) {
+            btn.classList.add("active");
+        }
+    }
+
+    // Filter cards
+    for (let card of cards) {
+        if (category === "all") {
+            card.style.display = "block";
+        } else if (card.classList.contains(category)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    }
+}
+
