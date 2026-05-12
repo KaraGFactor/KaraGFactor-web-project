@@ -42,6 +42,16 @@ body {
     min-height: 100vh;
 }
 
+a:link,
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+}
+
 .sr-only,
 .sr-only-focusable {
     position: absolute;
@@ -114,8 +124,13 @@ nav[aria-label="Primary navigation"] {
     position: absolute;
     right: 0;
     top: calc(100% + 0.5rem);
-        max-height: calc(100vh - 6rem);
-        overflow-y: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+    z-index: 10;
+}
+
+nav a {
+    color: var(--white);
     text-decoration: none;
     font-size: 0.95rem;
     display: block;
