@@ -3,6 +3,7 @@
     --deep-forest: #1a2e1a;
     --tech-green: #39ff14;
     --earth-background: #f4f1ee;
+    --pop-lime: #daffcc;
     --soft-border: #dcd0c0;
     --text-primary: #2b2b2b;
     --white: #ffffff;
@@ -26,6 +27,54 @@ html {
    - 768px: tablets
    - 1024px+: desktop
 */
+
+
+/* Hero Section Overhaul */
+#hero {
+    height: 90vh; /* Takes up most of the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--deep-forest); /* Dark background to make lime pop */
+    padding: 0 5%;
+    background: linear-gradient(rgba(26, 46, 26, 0.7), rgba(26, 46, 26, 0.7)), 
+                url('../images/japanese-tea-garden.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.giant-title {
+    color: var(--curve-lime);
+    font-size: clamp(5rem, 15vw, 12rem); /* Scales title based on screen size */
+    font-weight: 900;
+    letter-spacing: -0.05em; /* Tight spacing like the screenshot */
+    line-height: 0.8;
+    margin-bottom: var(--spacing-m);
+    text-transform: uppercase;
+}
+
+.hero-tagline {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-s);
+}
+
+#hero p:last-child {
+    color: var(--soft-border);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Header Adjustments for a Minimal Top */
+header {
+    background-color: transparent; /* Makes it blend if placed over images */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 
 /* Basic Reset */
 * {
