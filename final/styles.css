@@ -197,11 +197,24 @@ main section:nth-child(even) {
     margin-bottom: 40px;
 }
 
+/* Timeline Styling */
 #timeline {
     border-top: 1px solid var(--soft-border);
     padding-top: 40px;
 }
 
+timeline-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: scale(1.03); /* Subtle growth/lift effect */
+    background-color: var(--white); /* Highlights the specific achievement */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Very light shadow for focus */
+}
 .timeline-container {
     position: relative;
     padding-left: 30px;
@@ -231,4 +244,14 @@ main section:nth-child(even) {
     display: block;
     margin-bottom: 5px;
     font-size: 1.2rem;
+}
+
+.cta-btn, .filter-btn {
+    /* ... existing styles ... */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-btn:hover, .filter-btn:hover {
+    transform: translateY(-3px); /* Snappy, mechanical lift */
+    filter: brightness(1.1); /* Makes the tech-green glow slightly */
 }
