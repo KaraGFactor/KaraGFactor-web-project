@@ -36,22 +36,22 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--deep-forest); /* Dark background to make lime pop */
     padding: 0 5%;
-    background: linear-gradient(rgba(26, 46, 26, 0.7), rgba(26, 46, 26, 0.7)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                 url('../images/japanese-tea-garden.JPG');
     background-size: cover;
     background-position: center;
 }
 
 .giant-title {
-    color: var(--curve-lime);
+    color: var(--pop-lime);
     font-size: clamp(5rem, 15vw, 12rem); /* Scales title based on screen size */
     font-weight: 900;
-    letter-spacing: -0.05em; /* Tight spacing like the screenshot */
+    letter-spacing: -0.05em;
     line-height: 0.8;
     margin-bottom: var(--spacing-m);
     text-transform: uppercase;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-tagline {
