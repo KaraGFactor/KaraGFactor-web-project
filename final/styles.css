@@ -1,0 +1,15 @@
+:root {
+    /* Tech but Earthy Tones */
+--deep-forest: #1a2e1a; 
+--tech-green: #39ff14;
+
+/* More Earthy Tones */
+--earth-background: #f4f1ee;
+--soft-border: #dcd0c0;
+
+/* Global Styles */
+--text-primary: #2b2b2b;
+--white: #ffffff;
+--font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
