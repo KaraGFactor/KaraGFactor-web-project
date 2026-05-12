@@ -269,6 +269,69 @@ main section:nth-child(even) {
     padding: 60px 10%;
 }
 
+.blog-article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 10%;
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.article-hero {
+    margin-bottom: 2rem;
+}
+
+.article-label {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    color: var(--tech-green);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.article-meta {
+    margin-top: 0.75rem;
+    color: #5f6b61;
+    font-size: 0.95rem;
+}
+
+.blog-article p {
+    margin-top: 1.5rem;
+    line-height: 1.85;
+    color: #333;
+    font-size: 1rem;
+}
+
+.article-featured-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 2rem 0;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 480px) {
+    .article-featured-image {
+        border-radius: 8px;
+        margin: 1.5rem 0;
+    }
+}
+
+.blog-article h2 {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    line-height: 1.05;
+    margin: 0;
+}
+
+.blog-article p:first-of-type {
+    margin-top: 1rem;
+}
+
 .blog-grid {
     display: flex;
     flex-direction: column;

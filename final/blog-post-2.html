@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link sr-only-focusable" href="#main">Skip to content</a>
     <header>
         <div class="logo">
             <h1>GreenTech Solutions</h1>
         </div>
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
         <nav aria-label="Primary navigation">
-            <ul class="nav-menu">
+            <ul id="primary-navigation" class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">What We Offer</a></li>
                 <li><a href="blog.html">Resource Library</a></li>
@@ -22,7 +24,12 @@
     </header>
     <main id="main">
         <section class="blog-article">
-            <h2>The Future of Smart Recycling</h2>
+            <div class="article-hero">
+                <p class="article-label">Sustainability Insights</p>
+                <h2>The Future of Smart Recycling</h2>
+                <p class="article-meta">Published May 2026 · Resource Library</p>
+            </div>
+            <img src="../images/recycling-tech.jpg" alt="Smart recycling systems using AI technology" class="article-featured-image">
             <p>In non massa sagittis sem faucibus sodales nec sed nisi. Proin faucibus id nisl id sollicitudin. Duis ornare arcu non posuere molestie. Morbi id odio sapien. Proin a gravida odio. Maecenas viverra sem efficitur quam iaculis bibendum. Quisque sed luctus justo. Praesent eu mattis arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin est mi, vulputate semper volutpat eu, viverra vel tellus. Nunc varius sem est, condimentum posuere lorem egestas non. Vivamus rhoncus porta leo vel viverra. Mauris quis felis odio. Sed id elit id dolor ultricies facilisis. Cras varius posuere mi, at placerat orci aliquet vitae.
 
 Aliquam sem ipsum, porta sit amet leo condimentum, aliquet viverra quam. Quisque volutpat nibh erat. Morbi facilisis tellus risus, a mattis mi fermentum ac. Etiam nec urna quis nunc ultrices cursus a nec mauris. Duis quis lorem mattis lectus sagittis hendrerit consequat sit amet mi. Fusce faucibus tempus malesuada. Vestibulum pellentesque auctor arcu ut interdum. Nullam ornare lorem libero, id interdum nisl sagittis vitae.
@@ -39,3 +46,4 @@ Nunc egestas risus id orci aliquam pulvinar. Vestibulum lobortis tincidunt erat.
     </footer>
 </body>
 </html>
+
