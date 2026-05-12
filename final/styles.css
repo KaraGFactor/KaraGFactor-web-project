@@ -191,3 +191,44 @@ main section:nth-child(even) {
     text-decoration: none;
     border-bottom: 2px solid var(--tech-green);
 }
+
+/* About Us Styling */
+.about-content {
+    margin-bottom: 40px;
+}
+
+#timeline {
+    border-top: 1px solid var(--soft-border);
+    padding-top: 40px;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 30px;
+    border-left: 4px solid var(--tech-green); /* Techy vertical line */
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--deep-forest);
+    border: 3px solid var(--tech-green);
+    border-radius: 50%;
+}
+
+.year {
+    font-weight: bold;
+    color: var(--deep-forest);
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
