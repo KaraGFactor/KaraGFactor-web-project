@@ -128,7 +128,7 @@ nav a:focus-visible {
     color: var(--tech-green);
 }
 
-@media (min-width: var(--breakpoint-tablet)) {
+@media (min-width: 768px) {
     .nav-toggle {
         display: none;
     }
