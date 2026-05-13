@@ -31,7 +31,7 @@ html {
 
 /* Hero Section Overhaul */
 #hero {
-    height: 90vh; /* Takes up most of the screen */
+    min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +40,7 @@ html {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                 url('../images/greentech-hero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center 35%;
     position: relative;
 }
 
