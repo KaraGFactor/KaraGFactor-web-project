@@ -74,9 +74,9 @@ html {
 
 /* Header Adjustments for a Minimal Top */
 header {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
+    background-color: var(--deep-forest);
+    position: relative;
+    top: auto;
     left: 0;
     width: 100%;
     z-index: 100;
@@ -86,6 +86,12 @@ header {
     padding: 0.75rem 5%;
     color: var(--white);
     gap: 1rem;
+}
+
+body.home-page header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
 }
 
 .logo h1 {
@@ -170,14 +176,6 @@ nav a.final-link:focus-visible {
     text-decoration: none;
 }
 
-/* Non-hero pages (products, blog, blog posts) */
-#solutions-hero header,
-#blog-intro header,
-.blog-article header {
-    background-color: var(--deep-forest);
-    position: relative;
-    top: auto;
-}
 
 @media (min-width: 768px) {
     .nav-toggle {
@@ -372,25 +370,39 @@ main section:nth-child(even) {
     background-color: var(--white);
 }
 
-.solutions-overview {
+#solutions {
+    background-color: var(--white);
+    padding: 4rem 5%;
     margin-bottom: 3rem;
 }
 
+#contact {
+    background-color: var(--earth-background);
+    padding-top: 3rem;
+}
+
+.solutions-overview {
+    margin-bottom: 1.5rem;
+    max-width: 720px;
+}
+
 .solutions-overview h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
 }
 
 .solutions-overview p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    line-height: 1.7;
+    margin: 0;
+    max-width: 620px;
+    line-height: 1.6;
+    color: #2d2d2d;
 }
 
 .inline-link {
     color: var(--tech-green);
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.95rem;
     transition: color 0.2s ease;
 }
 
@@ -398,6 +410,18 @@ main section:nth-child(even) {
 .inline-link:focus-visible {
     color: var(--deep-forest);
     text-decoration: underline;
+}
+
+.solutions-panel {
+    background: var(--white);
+    border: 1px solid rgba(35, 74, 35, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 18px 40px rgba(24, 61, 24, 0.08);
+    padding: 2rem;
+}
+
+.solutions-actions {
+    margin-top: 1.5rem;
 }
 
 .product-preview-grid {
