@@ -364,7 +364,7 @@ nav a.final-link:focus-visible {
 }
 
 main section, article {
-    padding: var(--spacing-l) 5%;
+    padding: 4rem 5%;
     background-color: var(--earth-background);
 }
 
@@ -372,23 +372,52 @@ main section:nth-child(even) {
     background-color: var(--white);
 }
 
+.solutions-overview {
+    margin-bottom: 3rem;
+}
+
+.solutions-overview h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.solutions-overview p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.inline-link {
+    color: var(--tech-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.inline-link:hover,
+.inline-link:focus-visible {
+    color: var(--deep-forest);
+    text-decoration: underline;
+}
+
 .product-preview-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
+    gap: 30px;
+    margin-top: 2rem;
 }
 
 .preview-item {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     background: var(--earth-background);
-    padding: 20px;
+    padding: 30px 25px;
     border-radius: 8px;
     border-left: 4px solid var(--tech-green);
     /* Applying the hover effect you liked */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 140px;
 }
 
 .preview-item:hover {
@@ -397,10 +426,11 @@ main section:nth-child(even) {
 }
 
 .preview-item img {
-    width: 60px; /* Slightly larger than 50px for better visibility */
-    height: 60px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 4px;
+    flex-shrink: 0;
 }
 
 .preview-text p {
