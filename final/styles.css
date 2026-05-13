@@ -708,7 +708,7 @@ address a {
 .input-group input, .input-group textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid var(--tech-green);
+    border: 1px solid var(--pop-lime);
     border-radius: 4px;
     font-family: inherit;
 }
