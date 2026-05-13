@@ -1,4 +1,17 @@
 # KaraGFactor-web-project
+# GreenTech Solutions | Innovative Sustainability
+
+## 🔗 Live Demo
+**[View Final Project Live Site](https://karagfactor.github.io/KaraGFactor-web-project/final/index.html)**
+
+## Project Description
+GreenTech Solutions is a professional, high-end web platform designed for Small to Medium Businesses (SMBs) in San Antonio, Texas. The site aims to inform and educate users on sustainability while driving conversions for eco-friendly hardware, software, and consulting services. The design is a hybrid of "The Curve" (editorial warmth) and "Gravity" (tech-centric precision), featuring a massive, eccentric hero section and interactive product filtering.
+
+## Technologies Used
+* **HTML5:** [cite_start]Semantic structure for high web accessibility (WCAG compliant) [cite: 48-69, 165].
+* **CSS3:** [cite_start]Custom properties (variables), Flexbox, and CSS Grid for a mobile-first responsive layout [cite: 1-15, 129-152, 212-217].
+* **JavaScript (Vanilla):** [cite_start]Custom form validation, dynamic product filtering, and interactive navigation toggles [cite: 471-554].
+* **Google Fonts:** [cite_start]Modern, clean typography (Segoe UI/Roboto)[cite: 9].
 
 # Project 2 - HTML Foundation Page
 
