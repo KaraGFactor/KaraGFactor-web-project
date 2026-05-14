@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const primaryNav = document.querySelector('nav[aria-label="Primary navigation"]');
@@ -37,7 +35,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+// ── Contact form → Formspree ──
+    if (contactForm && feedback) {
+        const submitBtn = document.getElementById('submit-btn');
 
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            submitBtn.disabled    = true;
+            submitBtn.textContent = 'Sending…';
+
+            fetch('https://formspree.io/f/xojrowgw', {
+                method:  'POST',
+                body:    new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(function (res) {
+                if (res.ok) {
+                    contactForm.reset();
+                    contactForm.style.display = 'none';
+                    showFeedback(feedback, 'Thank you! Our San Antonio team will reach out shortly.', 'success');
+                } else {
+                    showFeedback(feedback, 'Something went wrong. Please email us at contact@greentech.solutions', 'error');
+                }
+            })
+            .catch(function () {
+                showFeedback(feedback, 'Something went wrong. Please email us at contact@greentech.solutions', 'error');
+            })
+            .finally(function () {
+                submitBtn.disabled    = false;
+                submitBtn.textContent = 'Send Message';
+            });
+        });
+    }
     
     if (subscribeForm) {
         subscribeForm.addEventListener('submit', function (e) {
