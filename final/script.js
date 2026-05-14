@@ -115,3 +115,17 @@ function filterSelection(category) {
     });
 }
 
+function calculateImpact() {
+    const empInput = document.getElementById('employees');
+    const resultDisplay = document.getElementById('impact-result');
+    
+    const employees = parseFloat(empInput.value);
+    
+    if (employees > 0) {
+        // Mock logic: 0.5 tons of carbon saved per employee annually
+        const carbonSaved = (employees * 0.5).toFixed(1);
+        resultDisplay.textContent = carbonSaved;
+    } else {
+        resultDisplay.textContent = "0";
+    }
+}

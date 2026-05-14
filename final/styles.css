@@ -881,3 +881,53 @@ address a {
 .contact-form-wrap {
     margin-top: -60px;
 }
+
+.about-interactive-container {
+    display: flex;
+    flex-direction: column; /* Stacks on mobile */
+    gap: 40px;
+    margin-top: 40px;
+}
+
+#timeline, #calculator-box {
+    flex: 1;
+}
+
+#calculator-box {
+    background-color: var(--deep-forest);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 6px solid var(--curve-lime); /* Matching your eccentric title color */
+}
+
+.calc-wrapper {
+    margin-top: 20px;
+}
+
+.calc-wrapper input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.calc-result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#impact-result {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--curve-lime); /* High-tech glow effect */
+}
+
+@media (min-width: 768px) {
+    .about-interactive-container {
+        flex-direction: row; /* Side-by-side on desktop  */
+        align-items: flex-start;
+    }
+}
