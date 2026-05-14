@@ -378,7 +378,7 @@ main section:nth-child(even) {
 
 #contact {
     background-color: var(--earth-background);
-    padding-top: 3rem;
+    padding: 80px 10%;
 }
 
 .solutions-overview {
@@ -775,6 +775,17 @@ address a {
 }
 
 /* ── Contact form ── */
+.contact-info a {
+    color: var(--deep-forest);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid var(--tech-green);
+}
+
+.contact-info p {
+    margin-bottom: 0.75rem;
+}
+
 .contact-wrapper {
     display: flex;
     flex-direction: column;
@@ -856,6 +867,7 @@ address a {
     }
     .contact-info {
         flex: 1;
+        padding-top: 0;
     }
     .contact-form-wrap {
         flex: 1.5;
