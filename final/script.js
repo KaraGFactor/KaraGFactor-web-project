@@ -1,13 +1,9 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const primaryNav = document.querySelector('nav[aria-label="Primary navigation"]');
     const contactForm = document.getElementById('contact-form');
-    const feedback = document.getElementById('form-feedback');
     const subscribeForm = document.getElementById('subscribe-form');
     const filterContainer = document.getElementById('filter-container');
-
     const navLinks = document.querySelectorAll('.nav-menu a');
 
     const closeMobileNav = () => {
@@ -32,27 +28,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
-            closeMobileNav();
-        }
+        if (event.key === 'Escape') closeMobileNav();
     });
 
-    if (contactForm && feedback) {
+    // ── Contact form → Formspree ──
+    if (contactForm) {
+        const successMsg = document.getElementById('form-success');
+        const errorMsg   = document.getElementById('form-error');
+        const btnText    = document.getElementById('btn-text');
+        const btnSpinner = document.getElementById('btn-spinner');
+        const submitBtn  = document.getElementById('submit-btn');
+
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            const emailInput = document.getElementById('email');
-            const emailValue = emailInput ? emailInput.value.trim() : '';
-            const isValidEmail = emailInput ? emailInput.checkValidity() : false;
 
-            if (isValidEmail) {
-                showFeedback(feedback, 'Thank you! Our San Antonio team will reach out shortly.', 'success');
-                contactForm.reset();
-            } else {
-                showFeedback(feedback, 'Please enter a valid email address.', 'error');
-            }
+            // Show loading state
+            submitBtn.disabled       = true;
+            btnText.style.display    = 'none';
+            btnSpinner.style.display = 'inline';
+
+            fetch('https://formspree.io/f/xojrowgw', {
+                method:  'POST',
+                body:    new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(function (res) {
+                if (res.ok) {
+                    contactForm.reset();
+                    contactForm.style.display    = 'none';
+                    successMsg.style.display     = 'block';
+                    successMsg.focus();
+                } else {
+                    errorMsg.style.display = 'block';
+                    errorMsg.focus();
+                }
+            })
+            .catch(function () {
+                errorMsg.style.display = 'block';
+                errorMsg.focus();
+            })
+            .finally(function () {
+                submitBtn.disabled       = false;
+                btnText.style.display    = 'inline';
+                btnSpinner.style.display = 'none';
+            });
         });
     }
 
+    // ── Subscribe form ──
     if (subscribeForm) {
         subscribeForm.addEventListener('submit', function (e) {
             e.preventDefault();
@@ -65,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ── Product filter ──
     if (filterContainer) {
         filterContainer.addEventListener('click', (event) => {
             const button = event.target.closest('.filter-btn');
@@ -77,16 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
     filterSelection('all');
 });
 
-function showFeedback(container, message, type) {
-    container.textContent = message;
-    container.classList.remove('hidden', 'success', 'error');
-    container.classList.add(type);
-    container.style.backgroundColor = type === 'success' ? '#e8f5e9' : '#ffebee';
-    container.style.color = type === 'success' ? 'var(--deep-forest)' : '#c62828';
-}
-
 function filterSelection(category) {
-    const cards = document.querySelectorAll('.product-card');
+    const cards   = document.querySelectorAll('.product-card');
     const buttons = document.querySelectorAll('.filter-btn');
 
     buttons.forEach((btn) => {
@@ -94,8 +110,6 @@ function filterSelection(category) {
     });
 
     cards.forEach((card) => {
-        const showCard = category === 'all' || card.classList.contains(category);
-        card.style.display = showCard ? 'block' : 'none';
+        card.style.display = (category === 'all' || card.classList.contains(category)) ? 'block' : 'none';
     });
 }
-
