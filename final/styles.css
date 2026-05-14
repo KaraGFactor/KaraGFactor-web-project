@@ -915,19 +915,30 @@ address a {
 
 .calc-result {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #impact-result {
     display: block;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 900;
-    color: var(--curve-lime); /* High-tech glow effect */
+    color: var(--pop-lime);
+    line-height: 1;
 }
 
 @media (min-width: 768px) {
     .about-interactive-container {
         flex-direction: row; /* Side-by-side on desktop  */
-        align-items: flex-start;
+        align-items: center;
+        gap: 60px;
+        justify-content: space-between;
+    }
+    #calculator-box {
+        flex: 0.8;
+        max-width: 350px; 
+        padding: 25px;
+        margin-left: auto; /* Pushes it slightly toward the right for balance */
     }
 }
