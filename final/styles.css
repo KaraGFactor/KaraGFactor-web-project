@@ -873,3 +873,11 @@ address a {
         flex: 1.5;
     }
 }
+
+.contact-wrapper {
+    align-items: flex-start;
+}
+
+.contact-form-wrap {
+    margin-top: -60px;
+}
