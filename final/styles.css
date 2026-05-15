@@ -65,7 +65,7 @@ html {
 /* Hero Content spacing */
 .hero-content {
     max-width: 90%;
-    margin-top: 50px; /* Gives room for the absolute header */
+    margin-top: 50px; 
 }
 #hero p:last-child {
     color: var(--soft-border);
@@ -357,7 +357,6 @@ main section:nth-child(even) {
     padding: 30px 25px;
     border-radius: 8px;
     border-left: 4px solid var(--tech-green);
-    /* Applying the hover effect you liked */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 140px;
 }
@@ -409,7 +408,7 @@ main section:nth-child(even) {
 .product-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Keeps imagery looking clean and modern */
+    object-fit: cover; 
     border-radius: 4px;
     margin-bottom: 15px;
 }
@@ -489,19 +488,19 @@ main section:nth-child(even) {
     flex-direction: column;
     gap: 40px;
     padding: 40px 15%;
-    background-color: var(--earth-background); /* Approachable neutral tone */
+    background-color: var(--earth-background); 
 }
 
 .blog-card {
     background: var(--white);
     padding: 30px;
     border-radius: 4px;
-    border-left: 6px solid var(--deep-forest); /* Authoritative tech accent */
+    border-left: 6px solid var(--deep-forest); 
     transition: transform 0.3s ease;
 }
 
 .blog-card:hover {
-    transform: translateX(10px); /* Subtle interaction for the "Innovation" feel */
+    transform: translateX(10px); 
 }
 
 .read-more {
@@ -532,14 +531,14 @@ main section:nth-child(even) {
 }
 
 .timeline-item:hover {
-    transform: scale(1.03); /* Subtle growth/lift effect */
-    background-color: var(--white); /* Highlights the specific achievement */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Very light shadow for focus */
+    transform: scale(1.03); 
+    background-color: var(--white); /
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
 }
 .timeline-container {
     position: relative;
     padding-left: 30px;
-    border-left: 4px solid var(--tech-green); /* Techy vertical line */
+    border-left: 4px solid var(--tech-green); 
 }
 
 .timeline-item {
@@ -572,8 +571,8 @@ main section:nth-child(even) {
 }
 
 .cta-btn:hover, .filter-btn:hover {
-    transform: translateY(-3px); /* Snappy, mechanical lift */
-    filter: brightness(1.1); /* Makes the tech-green glow slightly */
+    transform: translateY(-3px); 
+    filter: brightness(1.1); 
 }
 
 #contact {
@@ -660,22 +659,20 @@ address a {
 .card-image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Keeps images professional and un-stretched */
+    object-fit: cover; 
     transition: transform 0.5s ease;
 }
 
-/* The "Lift" and Zoom Interaction */
 .product-card:hover {
-    transform: translateY(-10px); /* The lift effect you liked */
+    transform: translateY(-10px); 
     border-top: 4px solid var(--tech-green);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .product-card:hover .card-image-container img {
-    transform: scale(1.1); /* Subtle zoom on the product image */
+    transform: scale(1.1); 
 }
 
-/* Filter Button Modernization */
 .filter-btn {
     padding: 12px 24px;
     border: 2px solid var(--soft-border);
@@ -683,7 +680,7 @@ address a {
     font-weight: bold;
     color: var(--deep-forest);
     transition: all 0.3s ease;
-    border-radius: 30px; /* Modern "pill" shape */
+    border-radius: 30px; 
 }
 
 .filter-btn.active, .filter-btn:hover {
@@ -816,7 +813,7 @@ address a {
     color: var(--white);
     padding: 30px;
     border-radius: 12px;
-    border-left: 6px solid var(--curve-lime); /* Matching your eccentric title color */
+    border-left: 6px solid var(--curve-lime); 
 }
 
 .calc-wrapper {
@@ -857,24 +854,24 @@ address a {
         flex: 0.8;
         max-width: 350px; 
         padding: 25px;
-        margin-left: auto; /* Pushes it slightly toward the right for balance */
+        margin-left: auto; 
     }
 }
 
 nav.nav-open .nav-menu {
-    display: flex; /* Overrides display: none  */
+    display: flex;
 }
 
 body {
-    overflow-x: hidden; /* Prevents horizontal scrolling [cite: 31] */
+    overflow-x: hidden; 
     width: 100%;
     position: relative;
 }
 .giant-title {
-    /* Lowering the minimum size slightly to ensure it fits on a 320px screen */
     font-size: clamp(3rem, 12vw, 12rem); 
-    word-wrap: break-word; /* Safety check for long titles [cite: 57] */
+    word-wrap: break-word; 
 }
+
 #impact-result {
     color: var(--curve-lime);
 }
