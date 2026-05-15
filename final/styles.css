@@ -946,3 +946,14 @@ address a {
 nav.nav-open .nav-menu {
     display: flex; /* Overrides display: none  */
 }
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling [cite: 31] */
+    width: 100%;
+    position: relative;
+}
+.giant-title {
+    /* Lowering the minimum size slightly to ensure it fits on a 320px screen */
+    font-size: clamp(3rem, 12vw, 12rem); 
+    word-wrap: break-word; /* Safety check for long titles [cite: 57] */
+}
