@@ -942,3 +942,7 @@ address a {
         margin-left: auto; /* Pushes it slightly toward the right for balance */
     }
 }
+
+nav.nav-open .nav-menu {
+    display: flex; /* Overrides display: none  */
+}
