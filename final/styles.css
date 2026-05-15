@@ -4,6 +4,7 @@
     --tech-green: #39ff14;
     --earth-background: #f4f1ee;
     --pop-lime: #daffcc;
+    --curve-lime: #daffcc;
     --soft-border: #dcd0c0;
     --text-primary: #2b2b2b;
     --white: #ffffff;
@@ -332,7 +333,12 @@ nav a:focus-visible {
         right: 0;
         left: 0;
         border-radius: 0;
-        top: calc(100% + 0.5rem);
+        top: 100%;
+        padding: 2rem 1rem;
+    }
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -956,4 +962,7 @@ body {
     /* Lowering the minimum size slightly to ensure it fits on a 320px screen */
     font-size: clamp(3rem, 12vw, 12rem); 
     word-wrap: break-word; /* Safety check for long titles [cite: 57] */
+}
+#impact-result {
+    color: var(--curve-lime);
 }
